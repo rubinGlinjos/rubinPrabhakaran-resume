@@ -1,169 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rubin Prabhakaran | Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            animation: fadeIn 1s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        h1 {
-            font-size: 36px;
-            margin: 0;
-            color: #2c3e50;
-        }
-
-        h2 {
-            font-size: 22px;
-            margin-top: 40px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 6px;
-            color: #444;
-        }
-
-        .title {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .contact {
-            margin: 20px 0;
-            line-height: 1.8;
-        }
-
-        .contact a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-                margin: 20px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <h1>Rubin Prabhakaran</h1>
-        <div class="title">Software Developer</div>
-        <div class="contact">
-            📞 7510634262<br>
-            📧 <a href="mailto:rubinPrabhakaran@gmail.com">rubinPrabhakaran@gmail.com</a><br>
-            📍 Kannur, India<br>
-            🌐 <a href="https://github.com/rubinGlinjos" target="_blank">github.com/rubinGlinjos</a><br>
-            🔗 <a href="https://www.linkedin.com/in/rubin-prabhakaran-069618312"
-                target="_blank">linkedin.com/in/rubin-prabhakaran-069618312</a>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class'
+      };
+    </script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 font-sans transition duration-300">
+    <div class="max-w-3xl mx-auto p-6 bg-white dark:bg-gray-800 shadow-lg rounded-xl mt-8">
+      <header class="text-center mb-6">
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Rubin Prabhakaran</h1>
+        <p class="text-lg text-blue-600 font-medium">Software Developer</p>
+        <div class="mt-2 text-sm text-gray-600 dark:text-gray-300">
+          <p>📞 7510634262 | 
+            <a href="mailto:rubinPrabhakaran@gmail.com" class="text-blue-500 hover:underline">rubinPrabhakaran@gmail.com</a>
+          </p>
+          <p>📍 Kannur, India</p>
+          <p>🌐 <a href="https://github.com/rubinGlinjos" target="_blank" class="text-blue-500 hover:underline">github.com/rubinGlinjos</a> | 
+            <a href="https://www.linkedin.com/in/rubin-prabhakaran-069618312" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a>
+          </p>
         </div>
+        <button id="toggleTheme" class="mt-4 text-xl bg-transparent hover:text-yellow-500 dark:hover:text-blue-400 transition">
+          <i id="themeIcon" class="ph ph-moon"></i>
+        </button>
+      </header>
 
-        <div class="section">
-            <h2>Summary</h2>
-            <p>
-                Motivated and self-taught Software Developer with over 1 year of hands-on experience in full-stack
-                development.
-                Skilled in PHP, Laravel, Angular, React, and MySQL, with real-world project experience including
-                commercial and academic applications.
-            </p>
-        </div>
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold border-b pb-1">Summary</h2>
+        <p class="mt-2">
+          Motivated and self-taught Software Developer with 1+ year of hands-on experience in full-stack development. Skilled in PHP, Laravel, Angular, React, and MySQL, with real-world experience in commercial and academic projects.
+        </p>
+      </section>
 
-        <div class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Languages & Frameworks:</strong> PHP, Laravel, Angular, React, Django</li>
-                <li><strong>Databases:</strong> MySQL</li>
-                <li><strong>Tools:</strong> Git, Postman, VS Code</li>
-                <li><strong>Soft Skills:</strong> Problem-solving, Teamwork, Fast Learner</li>
-            </ul>
-        </div>
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold border-b pb-1">Skills</h2>
+        <ul class="list-disc ml-6 mt-2 space-y-1">
+          <li>Languages & Frameworks: PHP, Laravel, Angular, React, Django</li>
+          <li>Databases: MySQL</li>
+          <li>Tools: Git, Postman, VS Code</li>
+          <li>Soft Skills: Problem-solving, Teamwork, Fast Learner</li>
+          <li>Languages Known: English, Malayalam</li>
+        </ul>
+      </section>
 
-        <div class="section">
-            <h2>Work Experience</h2>
-            <p><strong>Jr. Software Developer</strong><br>
-                Glinjos Innovations – Kannur (1+ Year)</p>
-            <ul>
-                <li>Worked on EazyGym (Angular frontend + Laravel backend)</li>
-                <li>Contributed to the StarCool Laravel project</li>
-                <li>Participated in code reviews, testing, and deployment</li>
-                <li>Worked on API integration and responsive UI</li>
-            </ul>
-        </div>
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold border-b pb-1">Work Experience</h2>
+        <p class="mt-2 font-medium">Jr. Software Developer – Glinjos Innovations, Kannur (1+ Year)</p>
+        <ul class="list-disc ml-6 mt-2 space-y-1">
+          <li>Worked on EazyGym (Angular frontend + Laravel backend)</li>
+          <li>Contributed to the StarCool Laravel project</li>
+          <li>Involved in API integration, testing, and UI development</li>
+        </ul>
+      </section>
 
-        <div class="section">
-            <h2>Projects</h2>
-            <p><strong>Tournament Management System</strong></p>
-            <ul>
-                <li>Developed to manage tournaments, teams, and schedules</li>
-                <li>Built using Laravel and MySQL with role-based access</li>
-            </ul>
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold border-b pb-1">Projects</h2>
+        <div class="grid gap-4 mt-4">
+          <div class="p-4 bg-gray-100 dark:bg-gray-700 rounded shadow">
+            <h3 class="text-lg font-semibold">Tournament Management System</h3>
+            <p class="text-sm">Laravel & MySQL project to manage tournaments, teams, and scheduling with role-based access.</p>
+            <a href="#" class="text-blue-500 hover:underline text-sm">View GitHub Repo</a>
+          </div>
+          <div class="p-4 bg-gray-100 dark:bg-gray-700 rounded shadow">
+            <h3 class="text-lg font-semibold">Expense Tracker (React + Firebase)</h3>
+            <p class="text-sm">Track personal expenses with user authentication and cloud storage.</p>
+            <a href="#" class="text-blue-500 hover:underline text-sm">View GitHub Repo</a>
+          </div>
+          <div class="p-4 bg-gray-100 dark:bg-gray-700 rounded shadow">
+            <h3 class="text-lg font-semibold">Weather App (Angular + API)</h3>
+            <p class="text-sm">Displays live weather forecast using the OpenWeather API.</p>
+            <a href="#" class="text-blue-500 hover:underline text-sm">View GitHub Repo</a>
+          </div>
         </div>
+      </section>
 
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>Bachelor's Degree (Incomplete)</strong><br>
-                Pursuing – [Add College Name]</p>
-        </div>
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold border-b pb-1">Education</h2>
+        <p class="mt-2">
+          <strong>Bachelor's Degree (Incomplete)</strong><br/>
+          Pursuing – [Add College Name Here]
+        </p>
+      </section>
 
-        <div class="section">
-            <h2>Languages Known</h2>
-            <ul>
-                <li>English</li>
-                <li>Malayalam</li>
-            </ul>
-        </div>
+      <footer class="text-center mt-6">
+        <a href="#" onclick="window.print()" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Download PDF</a>
+      </footer>
     </div>
-</body>
 
+    <script>
+      const toggleBtn = document.getElementById('toggleTheme');
+      const themeIcon = document.getElementById('themeIcon');
+
+      toggleBtn.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        if (document.documentElement.classList.contains('dark')) {
+          themeIcon.classList.replace('ph-moon', 'ph-sun');
+        } else {
+          themeIcon.classList.replace('ph-sun', 'ph-moon');
+        }
+      });
+    </script>
+  </body>
 </html>
